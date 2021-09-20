@@ -1,7 +1,4 @@
 from unittest import TestCase, main
-
-import coverage.execfile
-
 from anagrams.anagrams import palindrom as p
 
 cases = [
@@ -11,8 +8,6 @@ cases = [
 ]
 
 class Palindromtest(TestCase):
-
-
     def test_val(self):
         self.assertEqual(p('a1bcd efg!h'), 'd1cba hgf!e')
         for text, reversed_text in cases:
